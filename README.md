@@ -1,60 +1,14 @@
-# CodeIgniter 4 Framework
+1. Codeigneiter First Look
+   ![Screenshot 2025-04-22 070954](https://github.com/user-attachments/assets/a72b083f-afc1-4359-8432-69c47c10c8b7)
 
-## What is CodeIgniter?
+2. Membuat Page controller dan method about
+   ![Screenshot 2025-04-22 071056](https://github.com/user-attachments/assets/a901fb1e-447e-46d4-802d-20480fe26815)
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+3. Membuat View about.php dan mengubah routes /about agar me-return view about.php
+   ![Screenshot 2025-04-22 071451](https://github.com/user-attachments/assets/f188b6ac-9c56-4bd1-8377-2d91e8fcf5ae)
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+4. Menambahkan template header dan footer
+   ![Screenshot 2025-04-22 072108](https://github.com/user-attachments/assets/34c16c5e-5517-4890-825a-8e3bada502cf)
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
-
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
-
-## Important Change with index.php
-
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
-
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
-
-**Please** read the user guide for a better explanation of how CI4 works!
-
-## Repository Management
-
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Contributing
-
-We welcome contributions from the community.
-
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
-
-## Server Requirements
-
-PHP version 8.1 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+5. Memberi style dengan menambahkan style.css pada public directory
+   ![Screenshot 2025-04-22 074003](https://github.com/user-attachments/assets/7c5b0fb2-b50b-4bc5-87d9-821b92c2f41e)
