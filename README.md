@@ -18,3 +18,9 @@
 
 6. Memberi style dengan menambahkan style.css pada public directory
    ![Screenshot 2025-04-22 074003](https://github.com/user-attachments/assets/7c5b0fb2-b50b-4bc5-87d9-821b92c2f41e)
+
+7. Menyelesaikan tampilan halaman lain
+   ![Screenshot 2025-04-23 114814](https://github.com/user-attachments/assets/63e106cc-f5d4-406f-9ba4-d9c957c6d551)
+   ![Screenshot 2025-04-23 114821](https://github.com/user-attachments/assets/fba135eb-b493-48d0-ab20-6bf98dd57594)
+   ![Screenshot 2025-04-23 114827](https://github.com/user-attachments/assets/b37c1de9-38cb-4554-b282-b295cc7bf36f)
+   ![Screenshot 2025-04-23 114833](https://github.com/user-attachments/assets/4186a719-6ce5-43e6-bd85-4fd6122329a5)
