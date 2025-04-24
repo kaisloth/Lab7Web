@@ -28,6 +28,14 @@ Praktikum 1 (Pertemuan 2)
    ![Screenshot 2025-04-23 114833](https://github.com/user-attachments/assets/4186a719-6ce5-43e6-bd85-4fd6122329a5)
 
 
+
+
+
+
+
+
+
+
 Praktikum 2 (Pertemuan 3)
 
 1. Menambahkan admin page untuk mengelola artikel
