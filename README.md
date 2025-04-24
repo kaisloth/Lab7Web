@@ -1,3 +1,5 @@
+Praktikum 1 (Pertemuan 2)
+
 1. Codeigneiter First Look
    ![Screenshot 2025-04-22 070954](https://github.com/user-attachments/assets/a72b083f-afc1-4359-8432-69c47c10c8b7)
    
@@ -24,3 +26,23 @@
    ![Screenshot 2025-04-23 114821](https://github.com/user-attachments/assets/fba135eb-b493-48d0-ab20-6bf98dd57594)
    ![Screenshot 2025-04-23 114827](https://github.com/user-attachments/assets/b37c1de9-38cb-4554-b282-b295cc7bf36f)
    ![Screenshot 2025-04-23 114833](https://github.com/user-attachments/assets/4186a719-6ce5-43e6-bd85-4fd6122329a5)
+
+
+Praktikum 2 (Pertemuan 3)
+
+1. Menambahkan admin page untuk mengelola artikel
+   ![image](https://github.com/user-attachments/assets/f166cae7-8bd9-4677-877c-276c76b90e30)
+
+2. Membuat form tambah artikel
+   ![image](https://github.com/user-attachments/assets/46d81fa2-eeab-4f07-a585-18058315585a)
+
+3. Membuat form edit artikel dan route ke edit view ketika button ubah di click
+   ![image](https://github.com/user-attachments/assets/70951976-0fa0-46b6-acdd-c75df2c20d4e)
+
+4. Membuat route delete artikel, untuk mengapus artikel tertentu berdasarkan id yang dikirim dengan cara meng-click button hapus
+   ![image](https://github.com/user-attachments/assets/03ddfa80-d466-4506-ae53-013eedc8dc4d)
+
+
+
+
+
