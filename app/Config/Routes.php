@@ -8,4 +8,12 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('/about', 'Page::about');
 $routes->get('/contact', 'Page::contact');
-$routes->get('/faqs', 'Page::faqs');
+$routes->get('/articles', 'ArticleController::articles');
+$routes->get('/articles/(:any)', 'ArticleController::view/$1');
+
+$routes->group('admin', function($routes) {
+    $routes->get('articles', 'ArticleController::admin');
+    $routes->add('add', 'ArticleController::add');
+    $routes->add('edit/(:any)', 'ArticleController::edit/$1');
+    $routes->get('delete/(:any)', 'ArticleController::delete/$1');
+});

@@ -14,11 +14,11 @@ class Page extends BaseController
         ]);
     }
     public function contact() {
-        echo 'this is contact page';
+        return view("contact", ['title' => 'Contact Us']);
     }
-    public function faqs() {
-        echo 'this is faqs page';
-    }
+    // public function articles() {
+    //     return view("articles", ['title' => 'Articles']);
+    // }
 
     public function tos() {
         echo "ini halaman Term of Services";

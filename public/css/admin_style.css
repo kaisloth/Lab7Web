@@ -1,0 +1,126 @@
+/* import google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1;
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: #5a5a5a;
+}
+
+#container {
+    width: 80dvw;
+    margin: 0 auto;
+    box-shadow: 0 0 1em #cccccc;
+}
+
+/* header */
+header {
+    padding: 20px;
+}
+
+header h1 {
+    margin: 20px 10px;
+    color: #b5b5b5;
+}
+
+/* navigasi */
+
+nav a {
+    padding: 15px 30px;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* main content */
+#wrapper {
+    margin: 0;
+    padding: 1em;
+}
+
+/* footer */
+footer {
+    clear: both;
+    background-color: #1d1d1d;
+    padding: 20px;
+    color: #eee;
+}
+
+
+/* Table */
+table.table {
+    width: 100%;
+}
+table.table, table.table tr, table.table td {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+table.table thead, table.table tfoot {
+    background-color: #128bca;
+    color: #fff;
+}
+table.table thead tr th, table.table tbody tr td, table.table tfoot tr th {
+    padding: .5em;
+}
+
+/* btn */
+#btn-container {
+    display: flex;
+    gap: .5em;
+    justify-content: center;
+}
+a.btn {
+    color: #fff;
+    width: 4em;
+    height: 2em;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+}
+a#btn-edit{
+    background-color: #aaa;
+}
+a#btn-delete{
+    background-color: crimson;
+}
+
+/* Form Style */
+.form-container {
+    padding: 1.5em;
+}
+.form-container h2 {
+    margin-bottom: .5em;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    width: 100%;
+}
+form .input-field {
+    width: 100%;
+    padding: .5em;
+}
+form input[type=submit] {
+    background-color: #128bca;
+    width: 5em;
+    height: 2.5em;
+    border-radius: 4px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+form input[type=submit]:hover {
+    background-color: #0e6a9c;
+}
