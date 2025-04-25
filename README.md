@@ -28,14 +28,6 @@ Praktikum 1 (Pertemuan 2)
    ![Screenshot 2025-04-23 114833](https://github.com/user-attachments/assets/4186a719-6ce5-43e6-bd85-4fd6122329a5)
 
 
-
-
-
-
-
-
-
-
 Praktikum 2 (Pertemuan 3)
 
 1. Menambahkan admin page untuk mengelola artikel
@@ -49,6 +41,14 @@ Praktikum 2 (Pertemuan 3)
 
 4. Membuat route delete artikel, untuk mengapus artikel tertentu berdasarkan id yang dikirim dengan cara meng-click button hapus
    ![image](https://github.com/user-attachments/assets/03ddfa80-d466-4506-ae53-013eedc8dc4d)
+
+
+Praktikum 3 (Pertemuan 4)
+
+1. Menambahkan widget artikel terkini dan memperbarui tampilan homepage
+   ![image](https://github.com/user-attachments/assets/108fb406-41d3-4f22-a7b4-ac51005a9a74)
+
+2. Menggunakan View Cell memungkinkan kita untuk memisahkan tampilan menjadi beberapa components
 
 
 
