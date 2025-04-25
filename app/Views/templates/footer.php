@@ -1,5 +1,12 @@
         </section>
         <aside id="sidebar">
+
+        <!-- Cell Code -->
+            <div class="widget-box">
+                <?= view_cell(library: 'App\\Cells\\RecentArticlesCell::render') ?>
+            </div>
+        <!-- Cell Code -->
+
             <div class="widget-box">
                 <h3 class="title">Widget Header</h3>
                 <ul>

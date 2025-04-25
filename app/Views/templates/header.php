@@ -20,7 +20,7 @@
 <body>
     <div id="container">
         <header>
-            <h1>Layout Sederhana</h1>
+            <h1>Portal Berita</h1>
         </header>
         <nav>
             <a style="<?= ($url == '') ? 'background-color: #2b83ea;' : 'background-color: #1f5faa;'; ?>" href="<?= base_url('/');?>" class="active">Home</a>
