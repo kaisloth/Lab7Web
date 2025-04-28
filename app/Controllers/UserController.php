@@ -37,11 +37,11 @@ class UserController extends BaseController {
             }
             else {
                 $session->setFlashdata("flash_msg", "Password salah.");
-                return redirect()->to('/login');
+                return redirect()->to('/admin');
             }
         } else {
             $session->setFlashdata("flash_msg", "email tidak terdaftar.");
-            return redirect()->to('/login');
+            return redirect()->to('/admin');
         }
     }
 

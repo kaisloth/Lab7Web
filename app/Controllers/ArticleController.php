@@ -5,7 +5,6 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\Article;
 use CodeIgniter\HTTP\ResponseInterface;
-
 class ArticleController extends BaseController {
     public function articles() {
         $title = 'Daftar Artikel';
@@ -32,9 +31,16 @@ class ArticleController extends BaseController {
 
     public function admin() {
         $title = 'Daftar Artikel';
+        $q = $this->request->getVar('q') ?? '';
         $model = new Article();
-        $articles = $model->findAll();
-        return view('article/articles', compact('articles', 'title'));
+        $data = [
+            'title'=> $title,
+            'q' => $q,
+            'articles' => $model->like('judul', $q)->paginate(10),
+            'pager' => $model->pager,
+        ];
+
+        return view('article/articles', compact('data', 'title'));
     }
 
     public function add() {
