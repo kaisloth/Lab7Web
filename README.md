@@ -57,6 +57,18 @@ Praktikum 4 (Pertemuan 5)
    ![image](https://github.com/user-attachments/assets/c71e4c7b-537d-4aa3-8e9f-a03c0fdf9f3e)
 
 
+Praktikum 5 (Pertemuan 6)
+
+1. Membuat pagination pada list artikel
+   ![Screenshot 2025-04-28 204059](https://github.com/user-attachments/assets/d29cb15a-7b67-47ab-a6c1-f3d6257fb18a)
+   ![image](https://github.com/user-attachments/assets/02f04f7f-eb87-4c6a-bc43-f9551bba80f3)
+
+
+2. Menambahkan kolom pencarian untuk memfilter artikel yang akan ditampilkan berdasarkan kesamaan judul yang di input pada kolom pencarian
+   ![image](https://github.com/user-attachments/assets/c646038a-74bc-4032-8e9b-12bdac5ec290)
+   ![image](https://github.com/user-attachments/assets/956898df-4cad-49eb-881d-e9cf41455d4e)
+
+
 
 
 
