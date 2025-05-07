@@ -68,6 +68,14 @@ Praktikum 5 (Pertemuan 6)
    ![image](https://github.com/user-attachments/assets/c646038a-74bc-4032-8e9b-12bdac5ec290)
    ![image](https://github.com/user-attachments/assets/956898df-4cad-49eb-881d-e9cf41455d4e)
 
+Praktikum 6 (Pertemuan 7)
+
+1. Membuat input type file untuk input gambar artikel
+   ![image](https://github.com/user-attachments/assets/b8ac9b4b-ce2f-4c1e-bc96-277893b2d42e)
+
+2. Nama gambar yang diupload akan disimpan didalam database
+   ![image](https://github.com/user-attachments/assets/c8c4891e-4b5b-492c-b0ad-d6f59c1124ad)
+
 
 
 
