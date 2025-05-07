@@ -50,10 +50,16 @@ class ArticleController extends BaseController {
         $isDataValid = $validation->withRequest($this->request)->run();
 
         if ($isDataValid) {
+
+            $file = $this->request->getFile('gambar');
+            $file->move(ROOTPATH . 'public/gambar');
+
             $article = new Article();
             $article->insert([
-            'judul' => $this->request->getPost('judul'), 'isi' => $this->request->getPost('isi'),
-            'slug' => url_title($this->request->getPost('judul')),
+                'judul' => $this->request->getPost('judul'),
+                'isi' => $this->request->getPost('isi'),
+                'slug' => url_title($this->request->getPost('judul')),
+                'gambar' => $file->getName(),
             ]);
 
             return redirect('admin/articles');
