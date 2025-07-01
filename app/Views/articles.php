@@ -19,12 +19,11 @@
         pretium ac.</p>
     </article> -->
 
-    <?php if($articles): foreach($articles as $row): ?>
+    <?php if($data['articles']): foreach($data['articles'] as $row): ?>
         <article class="entry">
-            <h2<a href="<?= base_url('/artikel/' . $row['slug']);?>"><?=
-            $row['judul']; ?></a>
-            </h2>
-            <img src="<?= base_url('/gambar/' . $row['gambar']);?>" alt="<?=
+            <a style="color: black;" href="<?= $row['slug']?>"><h2 style="display: inline-block"><?=
+            $row['judul']; ?></h2></a>
+            <img style="aspect-ratio: 1/1; width:4em;" src="<?= $row['gambar']?>" alt="<?=
             $row['judul']; ?>">
             <p><?= substr($row['isi'], 0, 200); ?></p>
         </article>
@@ -35,30 +34,30 @@
         </article>
     <?php endif; ?>
 
-<?= $this->include('templates/footer'); ?>
+    <nav class="bg-transparent">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="?page=<?= $data["pager"]->getCurrentPage() - 1 ?>" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            
+            <?php
+            $pages = $data['pager']->getPageCount();
+            for($i = 1; $i <= $pages; $i++):?>
+                <li class="page-item <?php if($data["pager"]->getCurrentPage() == $i): echo "active"; else: echo ""; endif;?>" <?php if($data["pager"]->getCurrentPage() == $i): echo "aria-current='page'"; else: echo ""; endif; ?>>
+                    <a class="page-link" href="?page=<?= $i?>"><?= $i?></a>
+                </li>
+            <?php endfor; ?>
 
-<style>
-    .divider {
-        border:0;
-        border-top:1px solid #eeeeee;
-        margin:40px 0;
-    }
-    /* entry */
-    .entry {
-        margin: 15px 0;
-    }
-    .entry h2 {
-        margin-bottom: 20px;
-    }
-    .entry p {
-        line-height: 25px;
-    }
-    .entry img {
-        float: left;
-        border-radius: 5px;
-        margin-right: 15px;
-    }
-    .entry .right-img {
-        float: right;
-    }
-</style>
+            <li class="page-item">
+                <a class="page-link" href="?page=<?= $data["pager"]->getCurrentPage() + 1 ?>" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+</nav>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<?= $this->include('templates/footer'); ?>

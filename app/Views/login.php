@@ -12,7 +12,7 @@
         <?php if(session()->getFlashdata('flash_msg')):?>
             <div class="alert alert-danger"><?= session()->getFlashdata('flash_msg') ?></div>
         <?php endif;?>
-        <form action="" method="post">
+        <form action="/api/login" method="post">
             <div class="mb-3">
                 <label for="InputForEmail" class="form-label">Email address</label>
                 <input type="email" name="email" class="form-control" id="InputForEmail" placeholder="example@example.com">

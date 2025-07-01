@@ -13,6 +13,17 @@ class UserController extends BaseController {
         $users = $model->findAll();
         return view('login', compact('users', 'title'));
     }
+
+    public function getUsers() {
+        $model = new User;
+        $users = $model->findAll();
+
+        if(!empty($users)) {
+            return response()->setJSON(['status'=>200, 'message'=>'Mendapatkan data users', 'data'=>$users]);
+        }
+        return response()->setJSON(['status'=>404, 'message'=>'Users tidak ditemukan!']);
+
+    }
     public function login() {
         helper(['form']);
         $email = $this->request->getPost('email');
@@ -26,13 +37,13 @@ class UserController extends BaseController {
         if ($login) {
             $pass = $login['userpassword'];
             if (password_verify($password, $pass)) {
-                $login_data = [
-                    'user_id' => $login['id'],
-                    'user_name' => $login['username'],
-                    'user_email' => $login['useremail'],
-                    'logged_in' => TRUE,
+                $loginData = [
+                    'userid' => $login['id'],
+                    'username' => $login['username'],
+                    'useremail' => $login['useremail'],
+                    'islogin' => TRUE,
                 ];
-                $session->set($login_data);
+                $session->set($loginData);
                 return redirect('admin/articles');
             }
             else {
@@ -45,7 +56,26 @@ class UserController extends BaseController {
         }
     }
 
-    function logout() {
+    public function register() {
+        $model = new User();
+
+        $username = $this->request->getPost('username');
+        $useremail = $this->request->getPost('email');
+        $password = password_hash($this->request->getPost('password'), PASSWORD_BCRYPT);
+
+        $data = [
+            'username'=>$username,
+            'useremail'=>$useremail,
+            'userpassword'=>$password,
+        ];
+
+        if($model->save($data)) {
+            return redirect()->to('/admin');
+        }
+        return response()->setJSON(['status'=>401, 'message'=>'Register gagal!']);
+    }
+
+    public function logout() {
         session()->destroy();
         return redirect()->to('/login');
     }

@@ -20,6 +20,10 @@ class Page extends BaseController
     //     return view("articles", ['title' => 'Articles']);
     // }
 
+    public function register() {
+        return view('register');
+    }
+
     public function tos() {
         echo "ini halaman Term of Services";
     }

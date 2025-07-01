@@ -2,7 +2,7 @@
 
     <div class="form-container">
         <h2><?= $title; ?></h2>
-        <form action="" method="post" enctype="multipart/form-data">
+        <form action="<?= env('app_url').'/api/article/add'?>" method="post" enctype="multipart/form-data">
             <p>
                 <input class="input-field" type="text" name="judul" placeholder="Judul Artikel">
             </p>
@@ -11,7 +11,7 @@
             </p>
             <p>
                 <label for="artikel-img-input">Gambar Artikel:</label>
-                <input id="artikel-img-input" class="input-field" type="file" name="gambar">
+                <input id="artikel-img-input" class="input-field" type="file" name="gambar" accept=".jpg, .jpeg, .gif, .png, .webp">
             </p>
             <p><input type="submit" value="Kirim" class="btn btn-large"></p>
         </form>
